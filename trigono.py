@@ -17,6 +17,8 @@ def cosD(a):
 
 #mencari nilai tan
 def tanD(a):
+    if a == 90 or a == 270:
+        return "inf"
     return round(tan((pi/180)*a),2)
 
 # ada 3 menu:
@@ -30,12 +32,12 @@ def tanD(a):
 
 def pembelajaran():
     print(f"""
-     _______________________________
-    |     | 0   | 30   | 45  
-    | Sin | {sinD(0)} | {sinD(30)}  | {sinD(45)} | {sinD(30)}  | {sinD(45)} | {sinD(30)}  | {sinD(45)} | {sinD(30)}  | {sinD(45)} | {sinD(30)}  | {sinD(45)} | {sinD(30)}  | {sinD(45)} | {sinD(30)}  | {sinD(45)} | {sinD(30)}  | {sinD(45)} 
-    | cos | {cosD(0)} | {cosD(30)} | {cosD(45)} | {cosD(30)} | {cosD(45)} | {cosD(30)} | {cosD(45)} | {cosD(30)} | {cosD(45)} | {cosD(30)} | {cosD(45)} | {cosD(30)} | {cosD(45)} | {cosD(30)} | {cosD(45)} | {cosD(30)} | {cosD(45)}
-    | tan | {tanD(0)} | {tanD(30)} | {tanD(45)} | {tanD(30)} | {tanD(45)} | {tanD(30)} | {tanD(45)} | {tanD(30)} | {tanD(45)} | {tanD(30)} | {tanD(45)} | {tanD(30)} | {tanD(45)} | {tanD(30)} | {tanD(45)} | {tanD(30)} | {tanD(45)}
-    """)
+     __________________________________________________________________________________________________________________________________ 
+    |     | 0   | 30   | 45   | 60    | 90  | 120  | 135   | 150   | 180  | 210   | 225   | 240   | 270  | 300   | 315  | 330   | 360  |
+    | Sin | {sinD(0)} | {sinD(30)}  | {sinD(45)} | {sinD(60)}  | {sinD(90)} | {sinD(120)} | {sinD(135)}  | {sinD(150)}   | {sinD(180)}  | {sinD(210)}  | {sinD(225)} | {sinD(240)} | {sinD(270)} | {sinD(300)} | {sinD(315)}| {sinD(330)}  | {sinD(360)} |
+    | cos | {cosD(0)} | {cosD(30)} | {cosD(45)} | {cosD(60)}   | {cosD(90)} | {cosD(120)} | {cosD(135)} | {cosD(150)} | {cosD(180)} | {cosD(210)} | {cosD(225)} | {cosD(240)}  | {cosD(270)} | {cosD(300)}   | {cosD(315)} | {cosD(330)}  | {cosD(360)}  |
+    | tan | {tanD(0)} | {tanD(30)} | {tanD(45)}  | {tanD(60)}  | {tanD(90)} | {tanD(120)}| {tanD(135)}  | {tanD(150)} | {tanD(180)} | {tanD(210)}  | {tanD(225)}   | {tanD(240)}  | {tanD(270)}  | {tanD(300)} | {tanD(315)} | {tanD(330)} | {tanD(360)} |
+    """) 
 
 def kalkulator():
     print("Pilih metode operasi perhitungan trigonometri:")
